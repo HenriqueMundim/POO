@@ -18,9 +18,9 @@ public class ContaEspecial extends ContaBancaria{
 
     @Override
     public void sacar(double valor) {
-        double novoSaldo = this.getSaldo() - valor;
-        if (novoSaldo * -1 <= this.limite) {
-            this.setSaldo(novoSaldo);
+        double saldoDisponivel = this.getSaldo() + this.limite;
+        if (saldoDisponivel - valor > 0) {
+            this.setSaldo(this.getSaldo() - valor);
         } else {
             System.out.println("Limite indisponível");
         }
