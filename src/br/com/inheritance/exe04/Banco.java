@@ -1,4 +1,4 @@
-package exe04;
+package br.com.inheritance.exe04;
 
 public class Banco {
     private ContaCorrente[] contas;
