@@ -1,4 +1,4 @@
-package exe02;
+package br.com.exe02;
 
 public class Pneu {
     private int pressao;

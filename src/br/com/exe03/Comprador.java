@@ -1,4 +1,4 @@
-package exe03;
+package br.com.exe03;
 
 public class Comprador {
     private double verba;

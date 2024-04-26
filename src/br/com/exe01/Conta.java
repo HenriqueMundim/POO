@@ -1,4 +1,4 @@
-package exe01;
+package br.com.exe01;
 
 public class Conta {
     final String number;

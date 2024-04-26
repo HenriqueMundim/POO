@@ -1,4 +1,4 @@
-package exe01;
+package br.com.exe01;
 
 import java.util.Locale;
 import java.util.Scanner;
