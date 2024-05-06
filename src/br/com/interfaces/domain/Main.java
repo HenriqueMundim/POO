@@ -25,13 +25,13 @@ public class Main {
         System.out.print("Valor do contrato: ");
         double contractValue = sc.nextDouble();
         System.out.print("Entre com o número de parcelas: ");
-        int numberOfInsatllments = sc.nextInt();
+        int numberOfInstallments = sc.nextInt();
 
         Contract contract = new Contract(number, date, contractValue);
         IOnlinePaymentService paymentService = new PaypalService();
 
         ContractService contractService = new ContractService(paymentService);
-        contractService.processContract(contract, numberOfInsatllments);
+        contractService.processContract(contract, numberOfInstallments);
         contract.showInstallments();
     }
 }
