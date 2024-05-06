@@ -1,8 +1,11 @@
 package br.com.interfaces.domain.entities;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Installment {
+    private static DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
     private final LocalDate dueDate;
     private final double amount;
 
@@ -20,6 +23,6 @@ public class Installment {
     }
 
     public String toString() {
-        return dueDate.toString() + " - " + String.format("%.2f", amount);
+        return dueDate.format(format) + " - " + String.format("%.2f", amount);
     }
 }
