@@ -1,0 +1,15 @@
+package br.com.interfaces.domain.services;
+
+import br.com.interfaces.domain.interfaces.IOnlinePaymentService;
+
+public class PaypalService implements IOnlinePaymentService {
+    @Override
+    public double paymentfee(double amount) {
+        return amount * 0.02;
+    }
+
+    @Override
+    public double interest(double amount, int months) {
+        return amount * 0.01 * months;
+    }
+}
